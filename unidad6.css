@@ -7,19 +7,60 @@ body{
     margin: 30px;
     font-family: 'Inconsolata', monospace; 
 }
+a{
+    text-decoration: none;
+}
+.navegacion ul li{
+    float:left;
+    display: inline;
+    list-style-type: none;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    background-color: #333;
+    padding:5px;
+    border-radius: 2px;
+}
+.navegacion a{
+    color: #FFF;
+}
+.navegacion{
+    width:100%;
+    float: left;
+}
+.lanzador-menu{
+    background-color: #333;
+    color: #FFF;
+    padding:5px;
+    border-radius: 2px;
+    float: left;
+    margin-right:90%;
+    margin-bottom: 10px;
+}
+.navegacion ul{
+    padding: 0%;
+}
 .Bloque{
     width:100%;
     float:none;
-    margin-bottom: 40px;
-    padding: 2%;
+    margin-bottom: 10px;
+    padding: 1%;
 }
 p{
     font-size: 20px;
+}
+.navegacion{
+    display:none;
 }
 @media screen and (min-width:800px){
     .Bloque{
         width: 50%;
         float: left;
+    }
+    .navegacion{
+        display:block;
+    }
+    .lanzador-menu{
+        display: none;
     }
 }
 @media screen and (min-width:1000px){
